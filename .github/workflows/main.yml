@@ -78,7 +78,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull imsemin/infra_actions
+          sudo docker pull imsemin/infra_actions:latest
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 imsemin/infra_actions
+          sudo docker run --rm -d -p 5000:5000 imsemin/infra_actions:latest
