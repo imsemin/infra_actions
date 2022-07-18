@@ -62,7 +62,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: imsemin/infra-actions:latest 
+          tags: imsemin/infra_actions:latest 
 
   deploy:
     runs-on: ubuntu-latest
